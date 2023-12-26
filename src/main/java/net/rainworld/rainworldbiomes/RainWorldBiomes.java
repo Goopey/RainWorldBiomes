@@ -57,6 +57,7 @@ public class RainWorldBiomes {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.BUBBLE_FRUIT);
+            event.accept(ModItems.POPPED_BUBBLE_FRUIT);
         }
     }
 
