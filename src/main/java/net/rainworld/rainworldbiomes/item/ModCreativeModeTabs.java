@@ -9,12 +9,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.rainworld.rainworldbiomes.RainWorldBiomes;
 
-public class ModCreativeModTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = 
+public class ModCreativeModeTabs {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = 
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RainWorldBiomes.MODID);
 
-    public static final RegistryObject<CreativeModeTab> RWB_FOOD = CREATIVE_MODE_TAB.register(
-        "RWB Foods", 
+    public static final RegistryObject<CreativeModeTab> RWB_FOOD = CREATIVE_MODE_TABS.register(
+        "rwb_foods", 
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BUBBLE_FRUIT.get()))
             .title(Component.translatable("creativetab.rwb_foods"))
             .displayItems((pParameters, pOutput) -> {
@@ -25,6 +25,6 @@ public class ModCreativeModTabs {
         );
 
     public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TAB.register(eventBus);
+        CREATIVE_MODE_TABS.register(eventBus);
     }
 }
