@@ -14,7 +14,7 @@ public class ModItems {
     public static final RegistryObject<Item> BUBBLE_FRUIT = ITEMS.register("bubble_fruit", 
         () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> POPPED_BUBBLE_FRUIT = ITEMS.register("popped_bubble_fruit", 
-        () -> new Item(new Item.Properties()));
+        () -> new Item(new Item.Properties().food(ModFoods.POPPED_BUBBLE_FRUIT_FOOD_PROPERTIES)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
