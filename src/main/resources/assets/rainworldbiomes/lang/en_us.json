@@ -1,4 +1,6 @@
 {
     "item.rainworldbiomes.bubble_fruit": "Bubble Fruit",
-    "item.rainworldbiomes.popped_bubble_fruit": "Bubble Fruit"
+    "item.rainworldbiomes.popped_bubble_fruit": "Bubble Fruit",
+
+    "creativetab.rwb_foods": "RWB Foods"
 }
