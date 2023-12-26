@@ -31,13 +31,9 @@ import net.rainworld.rainworldbiomes.item.ModItems;
 
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(RainWorldBiomes.MODID)
 public class RainWorldBiomes {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "rainworldbiomes";
-
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public RainWorldBiomes() {
