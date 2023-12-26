@@ -5,11 +5,11 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
 }
 
-version = mod_version
-group = mod_group_id
+version = '0.0.1-1.20'
+group = 'net.rainworld.rainworldbiomes'
 
 base {
-    archivesName = mod_id
+    archivesName = 'rainworldbiomes'
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
