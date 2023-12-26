@@ -11,7 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = 
         DeferredRegister.create(ForgeRegistries.ITEMS, RainWorldBiomes.MODID);
 
-    public static final RegistryObject<Item> BLUE_FRUIT = ITEMS.register("blue_fruit", 
+    public static final RegistryObject<Item> BUBBLE_FRUIT = ITEMS.register("bubble_fruit", 
         () -> new Item(new Item.Properties())); 
 
     public static void register(IEventBus eventBus) {
