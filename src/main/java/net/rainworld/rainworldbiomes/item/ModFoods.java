@@ -17,5 +17,8 @@ public class ModFoods {
         .fast()
         .saturationMod(0.3f)
         .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200), 1f)
+        .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 200), 1f)
+        .effect(() -> new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 200), 1f)
+        .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200), 1f)
         .build();
 }
