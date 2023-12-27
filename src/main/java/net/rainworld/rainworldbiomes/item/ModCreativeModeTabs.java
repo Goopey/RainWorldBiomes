@@ -15,7 +15,7 @@ public class ModCreativeModeTabs {
         
     public static final RegistryObject<CreativeModeTab> RWB_BLOCK = CREATIVE_MODE_TABS.register(
             "rwb_blocks", 
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BUBBLE_FRUIT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CONCRETE_BLOCK.get()))
                 .title(Component.translatable("creativetab.rwb_blocks"))
                 .displayItems((pParameters, pOutput) -> {
                     pOutput.accept(ModBlocks.CONCRETE_BLOCK.get());
