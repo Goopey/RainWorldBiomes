@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "rainworldbiomes:bubble_fruit"
+        },
+        {
+            "item": "minecraft:potion"
+        }
+    ],
+    "result": {
+        "item": "rainworldbiomes:popped_bubble_fruit",
+        "count": 1
+    }
+}
