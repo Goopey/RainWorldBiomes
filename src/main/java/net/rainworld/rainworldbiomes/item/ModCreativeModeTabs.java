@@ -12,7 +12,16 @@ import net.rainworld.rainworldbiomes.RainWorldBiomes;
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = 
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RainWorldBiomes.MODID);
-
+        
+    public static final RegistryObject<CreativeModeTab> RWB_BLOCK = CREATIVE_MODE_TABS.register(
+            "rwb_blocks", 
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CONCRETE_BLOCK.get()))
+                .title(Component.translatable("creativetab.rwb_blocks"))
+                .displayItems((pParameters, pOutput) -> {
+                    pOutput.accept(ModBlocks.CONCRETE_BLOCK.get());
+                })
+                .build()
+            );
     public static final RegistryObject<CreativeModeTab> RWB_FOOD = CREATIVE_MODE_TABS.register(
         "rwb_foods", 
         () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BUBBLE_FRUIT.get()))
