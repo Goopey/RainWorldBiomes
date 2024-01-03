@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "rainworldbiomes:item/popped_bubble_fruit"
+    }
+}

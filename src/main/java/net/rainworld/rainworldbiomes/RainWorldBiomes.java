@@ -27,19 +27,24 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rainworld.rainworldbiomes.item.ModBlocks;
+import net.rainworld.rainworldbiomes.item.ModCreativeModeTabs;
+import net.rainworld.rainworldbiomes.item.ModItems;
+
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(RainWorldBiomes.MODID)
 public class RainWorldBiomes {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "rainworldbiomes";
-
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public RainWorldBiomes() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         
         MinecraftForge.EVENT_BUS.register(this);
@@ -54,7 +59,7 @@ public class RainWorldBiomes {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-    
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
